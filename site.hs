@@ -3,12 +3,12 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 
-
 --------------------------------------------------------------------------------
 config :: Configuration
 config = defaultConfiguration { 
     destinationDirectory = "docs"
 }
+
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -20,7 +20,7 @@ main = hakyllWith config $ do
         route   idRoute
         compile compressCssCompiler
 
-    match "assets/CV.pdf" $ do
+    match "assets/*" $ do
         route idRoute
         compile copyFileCompiler
 
@@ -28,6 +28,12 @@ main = hakyllWith config $ do
     match "*.md" $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
+    match "research.html" $ do
+        route idRoute
+        compile $ getResourceBody
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 

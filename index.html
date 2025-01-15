@@ -1,16 +1,59 @@
 ---
-title: Home
+title: About Me
 ---
 
-<h2>Welcome</h2>
+<head>
+    <style type="text/css">
+.contact-info {
+    line-height: 1.4;
+}
 
-<img src="/images/haskell-logo.png" style="float: right; margin: 10px;" />
+.contact-info p {
+    margin: 0.3em 0;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+    </style>
+</head>
+
+
+<!-- <h2>Welcome</h2> -->
+
+<!-- <img src="/images/andreas_bech_2 copy 2.jpg" width="200" style="float: right; margin: 10px;" />
 
 <p>Andreas Bech</p>
 
-<p>I've reproduced a list of recent posts here for your reading pleasure:</p>
+<p>I am a PhD candidate in the <a href="https://dornsife.usc.edu/econ/">Department of Economics</a> at the University of Southern California.</p>
+
+<p>Something about me</p>
 
 <h2>Posts</h2>
 $partial("templates/post-list.html")$
 
-<p>…or you can find more in the <a href="/archive.html">archives</a>.</p>
+<p>…or you can find more in the <a href="/archive.html">archives</a>.</p> -->
+
+<div style="display: flex; gap: 2em; align-items: start;">
+    <div style="flex: 1;">
+        <p>I am a PhD candidate in the <a href="https://dornsife.usc.edu/econ/">Department of Economics</a> at the University of Southern California. I was at Toulouse School of Economics where I did my masters in Decision Mathematics.</p>
+        <p>I work on Economics and Game Theory, where I am particularly interested in the economics of data. My research questions include, what is the value of data, how do you buy/elicit data from consumers and what are the incentives of consumers in the market for information. </p>
+        
+        <h2 style="margin-top: 2em;">Posts</h2>
+        $partial("templates/post-list.html")$
+        <p>…or you can find more in the <a href="/archive.html">archives</a>.</p>
+    </div>
+    
+    <div style="min-width: 200px;">
+        <img src="/images/andreas_bech_2 copy 2.jpg" width="200" style="margin-bottom: 1em;" />
+        <div class="contact-info" style="font-size: 0.9em;">
+            <p style="font-size: 1.5em; font-weight: 700; margin-bottom: 0.5em;">Andreas Bech</p>
+            <p>PhD student at USC</p>
+            <p>📍 Los Angeles, CA</p>
+            <p>📧 <a href="mailto:bech@usc.edu">bech@usc.edu</a></p>
+            <p>💻 <a href="https://github.com/andreaslillevangbech">GitHub</a></p>
+        </div>
+    </div>
+</div>
+
