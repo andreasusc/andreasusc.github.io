@@ -9,7 +9,6 @@ config = defaultConfiguration {
     destinationDirectory = "docs"
 }
 
-
 main :: IO ()
 main = hakyllWith config $ do
     match "images/*" $ do
