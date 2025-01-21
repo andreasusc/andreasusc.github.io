@@ -22,7 +22,7 @@ CDF $F$. The market is served by monopolist who aims to maximize it's profit in
 the market. In the standard case the monopolist knows $F$ and thus sets the
 price, $p$, that solves
 
-$$ p = \frac{f(p)}{1-F(p)} $$.
+$$ p^M = \frac{f(p)}{1-F(p)} $$.
 
 Suppose instead that, before trade, every consumer has the option to sell its
 personal valuation to the monopolist. That is, the consumer either sells
@@ -50,7 +50,7 @@ nature of an equilibrium as a kind of stability condition.
 The unique solution to the game, that is, the unique PBE, is for the monopolist
 to offer $r=0$ and for *all* consumers to sell their information. The monopolist
 sets $p(v)=v$ and $p=1$. Clearly the equilibrium is very bad for consumers, as
-they are both 1. perfectly price discriminated against and 2. are not
+they are both (a) perfectly price discriminated against and (b) not
 compensated for the data they sell. So how can this be?
 
 First notice that the *marginal consumer*, with valuation $\hat{v}$, who is
@@ -59,25 +59,26 @@ indifferent between selling and not selling, satisfies
 $$ r = \hat{v} - p $$.
 
 Here the LHS is the surplus from selling and the RHS is the surplus from not
-selling. Clearly, given $r$ and $p$, for any consumer with $v \leq \hat{v}$ it
-is optimal to sell. The valuation of the marginal consumer, $\hat{v}$, then acts
-as a cut-off where all consumers with a higher valuation do not sell and remain
-anonymous. Thus given a cut-off, $\hat{v}$, the monopolist sets a price, $p \geq
+selling and facing $p$ in the product market (remaining anonymous). Clearly,
+given $r$ and $p$, for any consumer with $v \leq \hat{v}$ it is optimal to sell.
+The valuation of the marginal consumer, $\hat{v}$, then acts as a cut-off where
+all consumers with a higher valuation do not sell and remain anonymous. Thus,
+given a cut-off, $\hat{v}$, the monopolist sets an optimal price, $p \geq
 \hat{v}$. So, suppose that the monopolist sets $r > 0$ in the first stage. Then
 the marginal consumer gets no payoff from not selling but a strictly positive
-payoff from selling. This precludes the existence of a marginal consumer.
+payoff from selling.  This precludes the existence of a marginal consumer.
 
 On the other hand, it is clear that the above proposed equilibrium is in fact an
 equilibrium where no one has an incentive to deviate. If every consumer sells
 data, the monopolist can form any belief it wants about a consumer who does not
 sell data, since on the equilibrium path, this is a probability zero event. Thus
-choosing the belief to that $v=1$ with probability $1$ the optimal price is
-$p=1$. In this case, any consumer who deviates to not selling data gets a zero
-payoff which makes the deviation non-profitable.
+choosing the belief $v=1$ with probability $1$ for a non-selling consumer, the
+optimal price is $p=1$. In this case, any consumer who deviates to not selling
+gets a payoff of zero, which makes the deviation non-profitable.
 
 Finally, one might wonder if there is an equilibrium where no consumer sells
-data and the monopolist sets the monopolist price $p = \frac{f(p)}{1-F(p)}$ and
+data and the monopolist sets the monopolist price $p^M$ and
 $r=0$. But this is not an equilibrium since it is not stable. The monopolist can
 profitably deviate to raising the price, $r$, and having the lower segment, who
-do not trade at price $p = \frac{f(p)}{1-F(p)}$ sell their data. The proposed
+do not trade at price $p^M$, sell their data. The proposed
 equilibrium is thus unique.
