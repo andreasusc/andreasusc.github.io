@@ -10,7 +10,7 @@ title: Working papers
 
 2. '**Privacy in information markets**'
    (Sep 23)  
-   [[pdf](assets/3YPaper.pdf)]  
+   [[pdf](assets/Privacy_in_info_markets.pdf)]  
 
    - TODO
 
